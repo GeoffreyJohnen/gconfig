@@ -1,5 +1,10 @@
 import configparser
+import sys
 
+from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QPushButton
+from PyQt5.QtWidgets import QVBoxLayout
+from PyQt5.QtWidgets import QWidget
 
 def is_bool(section,key):
   is_bool = False
@@ -7,8 +12,6 @@ def is_bool(section,key):
   if config[section][key] in bool_list:
     is_bool = True
   return is_bool
-
-
 
 #Opening the config file
 #----------------------------------------------
